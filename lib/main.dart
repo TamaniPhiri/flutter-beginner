@@ -34,12 +34,37 @@ class MyHomePage extends StatelessWidget {
   }
 }
 
-class Progress extends MyHomePage {
+class Progress extends StatelessWidget {
   const Progress({super.key});
   @override
   Widget build(BuildContext context) {
     return const Column(
-      children: [Text("You are this far from completing your tasks")],
+      children: [
+        Text("You are this far from completing your tasks"),
+        LinearProgressIndicator(
+          value: 0.0,
+        )
+      ],
+    );
+  }
+}
+
+class TaskList extends StatelessWidget {
+  const TaskList({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return const Column(
+      children: [],
+    );
+  }
+}
+
+class TaskItem extends StatelessWidget {
+  const TaskItem({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return const Row(
+      children: [Checkbox(onChanged: null, value: false)],
     );
   }
 }
