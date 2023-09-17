@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
       title: 'Flutter newbie',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        useMaterial3: true,
       ),
       home: const MyHomePage(),
     );
@@ -28,6 +27,19 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Planner"),
       ),
+      body: const Column(children: [
+        Progress(),
+      ]),
+    );
+  }
+}
+
+class Progress extends MyHomePage {
+  const Progress({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return const Column(
+      children: [],
     );
   }
 }
