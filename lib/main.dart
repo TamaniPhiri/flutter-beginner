@@ -27,9 +27,7 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Planner"),
       ),
-      body: const Column(children: [
-        Progress(),
-      ]),
+      body: const Column(children: [Progress(), TaskList()]),
     );
   }
 }
@@ -54,17 +52,21 @@ class TaskList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Column(
-      children: [],
+      children: [
+        TaskItem(label: "go for class"),
+        TaskItem(label: "go for class")
+      ],
     );
   }
 }
 
 class TaskItem extends StatelessWidget {
-  const TaskItem({super.key});
+  final String label;
+  const TaskItem({Key? key, required this.label}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return const Row(
-      children: [Checkbox(onChanged: null, value: false)],
+    return Row(
+      children: [const Checkbox(onChanged: null, value: false), Text(label)],
     );
   }
 }
