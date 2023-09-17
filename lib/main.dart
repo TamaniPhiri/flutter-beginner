@@ -56,7 +56,8 @@ class TaskList extends StatelessWidget {
         TaskItem(label: "go for class"),
         TaskItem(label: "go for class"),
         TaskItem(label: "go for class"),
-        TaskItem(label: "go for class")
+        TaskItem(label: "go for class"),
+        TextField()
       ],
     );
   }
