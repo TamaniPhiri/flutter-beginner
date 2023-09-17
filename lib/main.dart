@@ -39,7 +39,7 @@ class Progress extends MyHomePage {
   @override
   Widget build(BuildContext context) {
     return const Column(
-      children: [],
+      children: [Text("You are this far from completing your tasks")],
     );
   }
 }
