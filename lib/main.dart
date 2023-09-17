@@ -54,6 +54,8 @@ class TaskList extends StatelessWidget {
     return const Column(
       children: [
         TaskItem(label: "go for class"),
+        TaskItem(label: "go for class"),
+        TaskItem(label: "go for class"),
         TaskItem(label: "go for class")
       ],
     );
